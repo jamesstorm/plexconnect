@@ -1,9 +1,12 @@
 This is a Dockerfile setup for PlexConnect - https://github.com/iBaa/PlexConnect
 
+Note: forked this from pducharme/plexconnect because that project's docker file was not actually using https://github.com/iBaa/PlexConnect
+
+
 To run:
 
 ```
-docker run -d --host="name" --name="plexconnect" -v /path/to/plexconnect/ssl:/opt/plexconnect/assets/certificates:rw -v /etc/localtime:/etc/localtime:ro -p 80:80 pducharme/plexconnect
+docker run -d --host="name" --name="plexconnect" -v /path/to/plexconnect/ssl:/opt/plexconnect/assets/certificates:rw -v /etc/localtime:/etc/localtime:ro -p 80:80 jamesstorm/plexconnect
 ```
 
 FIRST TIME USERS
